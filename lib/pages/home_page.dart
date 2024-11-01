@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:general/pages/details_page.dart';
 
+import 'house_page.dart';
+
 class HomePage extends StatefulWidget {
 
   static const String id = 'home_page';
@@ -22,6 +24,10 @@ class _HomePageState extends State<HomePage> {
     Navigator.of(context).pushReplacementNamed(DetailsPage.id);
   }
 
+  _callHousePage(){
+    Navigator.of(context).pushReplacementNamed(HousePage.id);
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -40,17 +46,39 @@ class _HomePageState extends State<HomePage> {
         ],
 
       ),
-      body: Center(
-        
-        child: Text(count.toString(),style: TextStyle(fontSize: 50),),
-
-
-
-
-
-
-
+      body:Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              //color: Colors.lightBlue,
+              child: Text(count.toString(),style: TextStyle(fontSize: 50),),
+            ),
+            GestureDetector(
+              onTap: (){
+                _callHousePage();
+              },
+              child: Container(
+                child: Text('Click me',style: TextStyle(
+                  fontSize: 30,color: Colors.lightBlue
+                ),),
+              ),
+            ),
+          ],
+        ),
       ),
+
+
+
+
+
+
+
+
+
+
+
+
 
       floatingActionButton: FloatingActionButton(
         onPressed: (){

@@ -1,4 +1,4 @@
-#Sat Sep 28 17:12:27 UZT 2024
+#Fri Oct 11 13:36:23 UZT 2024
 base.0=D\:\\StudioProjects\\general\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=D\:\\StudioProjects\\general\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=D\:\\StudioProjects\\general\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
